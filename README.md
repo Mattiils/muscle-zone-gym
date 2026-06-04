@@ -112,8 +112,9 @@ The website was developed in Visual Studio Code using separate HTML pages linked
 | Footer visible | Footer shown on all pages | Pass |
 
 Automated Testing
-HTML Validator
-Css Validator
+HTML Validator = <img width="2526" height="896" alt="image" src="https://github.com/user-attachments/assets/0f32ef45-7de2-4b2d-8a7f-2c65554369c9" />
+Css Validator = <img width="2530" height="763" alt="image" src="https://github.com/user-attachments/assets/0bb3e9dc-13a3-48a1-b82f-99acb57bdb50" />
+
 Lighthouse Testing
 
 ---
