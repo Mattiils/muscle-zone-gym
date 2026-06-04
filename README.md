@@ -111,6 +111,11 @@ The website was developed in Visual Studio Code using separate HTML pages linked
 | Mobile layout | Content adjusts to screen | Pass |
 | Footer visible | Footer shown on all pages | Pass |
 
+Automated Testing
+HTML Validator
+Css Validator
+Lighthouse Testing
+
 ---
 
 ## Bugs Found and Fixes
