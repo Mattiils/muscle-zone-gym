@@ -283,14 +283,6 @@ Lighthouse was run on the deployed site via Chrome DevTools (F12 > Lighthouse ta
 > Add your Lighthouse screenshot here as `images/lighthouse.png`
 
 ![Google Lighthouse results](images/lighthouse.png)
-
-| Category | Score |
-|----------|-------|
-| Performance | [Add your score] |
-| Accessibility | [Add your score] |
-| Best Practices | [Add your score] |
-| SEO | [Add your score] |
-
 ---
 
 ## Deployment
