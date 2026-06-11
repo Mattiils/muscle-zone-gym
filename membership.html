@@ -1,61 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Membership | Muscle Zone</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muscle Zone Gym membership plans - monthly, quarterly, and annual options to suit your lifestyle.">
+  <title>Membership | Muscle Zone Gym</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header>
-<nav>
-<h1>Muscle Zone</h1>
+  <!-- Skip to main content link for screen reader / keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="membership.html">Membership</a></li>
-<li><a href="trainers.html">Trainers</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
+  <!-- ===== NAVIGATION ===== -->
+  <header>
+    <nav aria-label="Main navigation">
+      <h1>Muscle Zone</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membership.html" class="active" aria-current="page">Membership</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section class="pricing">
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
 
-<h2>Membership Plans</h2>
+    <!-- ===== MEMBERSHIP PRICING SECTION ===== -->
+    <section class="pricing" aria-label="Membership pricing plans">
+      <h2>Membership Plans</h2>
 
-<div class="price-container">
+      <div class="price-container">
 
-<div class="card">
-<h3>Monthly</h3>
-<p class="price">£35</p>
-<p>Full gym access every month.</p>
-<a href="contact.html" class="btn">Join</a>
-</div>
+        <!-- Monthly Plan -->
+        <div class="card">
+          <h3>Monthly</h3>
+          <p class="price">£35<span style="font-size:1rem; color:#aaa">/mo</span></p>
+          <p>Full gym access every month. Cancel anytime with no long-term commitment required.</p>
+          <a href="contact.html" class="btn" aria-label="Join on the monthly plan">Join</a>
+        </div>
 
-<div class="card featured">
-<h3>Pay As You Go</h3>
-<p class="price">£100</p>
-<p>3 months paid upfront.</p>
-<a href="contact.html" class="btn">Popular</a>
-</div>
+        <!-- Pay As You Go (featured) -->
+        <div class="card featured">
+          <h3>Pay As You Go</h3>
+          <p class="price">£100<span style="font-size:1rem; color:#aaa">/3mo</span></p>
+          <p>Three months paid upfront. Save over 5% compared to paying month by month.</p>
+          <a href="contact.html" class="btn" aria-label="Join on the popular quarterly plan">Get Started</a>
+        </div>
 
-<div class="card">
-<h3>1 Full Year</h3>
-<p class="price">£350</p>
-<p>Best value yearly membership.</p>
-<a href="contact.html" class="btn">Join</a>
-</div>
+        <!-- Annual Plan -->
+        <div class="card">
+          <h3>1 Full Year</h3>
+          <p class="price">£350<span style="font-size:1rem; color:#aaa">/yr</span></p>
+          <p>Best value yearly membership. Over 16% saving compared to paying monthly.</p>
+          <a href="contact.html" class="btn" aria-label="Join on the annual plan">Join</a>
+        </div>
 
-</div>
+      </div>
+    </section>
 
-</section>
+    <!-- ===== WHAT IS INCLUDED SECTION ===== -->
+    <section class="features" aria-label="What is included with membership">
+      <div>
+        <h3>Free Gym Induction</h3>
+        <p>All new members receive a full gym induction with one of our qualified trainers before their first session.</p>
+      </div>
+      <div>
+        <h3>Unlimited Access</h3>
+        <p>Access the gym during all opening hours, 7 days a week, with no peak-time restrictions on any plan.</p>
+      </div>
+      <div>
+        <h3>Progress Tracking</h3>
+        <p>Use our member app to log workouts, track progress, and stay motivated with weekly goals.</p>
+      </div>
+    </section>
 
-<footer>
-<p>© 2026 Muscle Zone Gym</p>
-</footer>
+  </main>
 
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 Muscle Zone Gym. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
