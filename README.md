@@ -289,13 +289,6 @@ Lighthouse was run on the deployed site via Chrome DevTools (F12 > Lighthouse ta
 
 The website was deployed using GitHub Pages.
 
-**Steps to deploy:**
-1. Push all project files to the GitHub repository
-2. Go to the repository on GitHub
-3. Click **Settings** > **Pages**
-4. Under Source, select **main** branch and **/ (root)** folder
-5. Click Save - the site will be live within a few minutes
-
 **Live Website:** [https://mattiils.github.io/muscle-zone-gym/](https://mattiils.github.io/muscle-zone-gym/)
 
 ---
