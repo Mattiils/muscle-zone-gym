@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the Muscle Zone Gym personal trainers - expert coaches for strength, cardio, nutrition, and more.">
+  <title>Trainers | Muscle Zone Gym</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Skip to main content link for screen reader / keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header>
+    <nav aria-label="Main navigation">
+      <h1>Muscle Zone</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="trainers.html" class="active" aria-current="page">Trainers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <!-- ===== TRAINERS SECTION ===== -->
+    <section class="trainers-section" aria-label="Our personal trainers">
+      <h2>Meet Our Trainers</h2>
+
+      <div class="trainers-grid">
+
+        <!-- Trainer 1 -->
+        <div class="trainer-card">
+          <!-- Trainer avatar placeholder - image would go here in production -->
+          <div class="trainer-avatar" role="img" aria-label="Trainer avatar for Jake Morley">💪</div>
+          <h3>Jake Morley</h3>
+          <p class="specialty">Strength &amp; Conditioning</p>
+          <p>Jake has 8 years of experience coaching competitive powerlifters and everyday gym-goers. He specialises in building real, functional strength from the ground up.</p>
+          <!-- User opens this modal - they control it -->
+          <button class="btn" onclick="openModal('modal-jake')" aria-haspopup="dialog">
+            View Profile
+          </button>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="trainer-card">
+          <div class="trainer-avatar" role="img" aria-label="Trainer avatar for Sara Chen">🏃</div>
+          <h3>Sara Chen</h3>
+          <p class="specialty">Cardio &amp; Weight Loss</p>
+          <p>Sara is a certified personal trainer and nutritionist who helps clients achieve sustainable weight loss through smart training and realistic lifestyle changes.</p>
+          <button class="btn" onclick="openModal('modal-sara')" aria-haspopup="dialog">
+            View Profile
+          </button>
+        </div>
+
+        <!-- Trainer 3 -->
+        <div class="trainer-card">
+          <div class="trainer-avatar" role="img" aria-label="Trainer avatar for Marcus Bell">🥊</div>
+          <h3>Marcus Bell</h3>
+          <p class="specialty">Boxing &amp; HIIT</p>
+          <p>Marcus brings energy and intensity to every session. A former amateur boxer, he runs group HIIT classes and one-to-one boxing sessions for all fitness levels.</p>
+          <button class="btn" onclick="openModal('modal-marcus')" aria-haspopup="dialog">
+            View Profile
+          </button>
+        </div>
+
+        <!-- Trainer 4 -->
+        <div class="trainer-card">
+          <div class="trainer-avatar" role="img" aria-label="Trainer avatar for Amy Patel">🧘</div>
+          <h3>Amy Patel</h3>
+          <p class="specialty">Yoga &amp; Mobility</p>
+          <p>Amy helps members improve flexibility, reduce injury risk, and build a stronger mind-body connection. She offers both one-to-one sessions and weekly group yoga classes.</p>
+          <button class="btn" onclick="openModal('modal-amy')" aria-haspopup="dialog">
+            View Profile
+          </button>
+        </div>
+
+        <!-- Trainer 5 -->
+        <div class="trainer-card">
+          <div class="trainer-avatar" role="img" aria-label="Trainer avatar for Dan Ross">🏋️</div>
+          <h3>Dan Ross</h3>
+          <p class="specialty">Bodybuilding &amp; Nutrition</p>
+          <p>Dan is a competitive bodybuilder and certified nutrition coach. He creates fully personalised training and meal plans designed around each client's specific goals.</p>
+          <button class="btn" onclick="openModal('modal-dan')" aria-haspopup="dialog">
+            View Profile
+          </button>
+        </div>
+
+        <!-- Trainer 6 -->
+        <div class="trainer-card">
+          <div class="trainer-avatar" role="img" aria-label="Trainer avatar for Leah Ford">⚡</div>
+          <h3>Leah Ford</h3>
+          <p class="specialty">Functional Fitness</p>
+          <p>Leah specialises in functional movement and injury rehabilitation. She works with clients returning from injury and those who want to move better in everyday life.</p>
+          <button class="btn" onclick="openModal('modal-leah')" aria-haspopup="dialog">
+            View Profile
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== BOOK A SESSION CTA ===== -->
+    <section style="text-align:center; padding: 40px 20px 60px;" aria-label="Book a session">
+      <h2 style="margin-bottom:15px;">Ready to Train?</h2>
+      <p style="color:#aaa; margin-bottom:25px; max-width:480px; margin-left:auto; margin-right:auto;">
+        Get in touch to book a free consultation or first session with any of our trainers.
+      </p>
+      <a href="contact.html" class="btn">Book a Session</a>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 Muscle Zone Gym. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== TRAINER PROFILE MODALS ===== -->
+  <!-- Each modal is opened only when the user clicks "View Profile" -->
+
+  <!-- Jake Modal -->
+  <div id="modal-jake" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="jake-title">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-jake')" aria-label="Close Jake's profile">&times;</button>
+      <div style="font-size:3rem; margin-bottom:12px;">💪</div>
+      <h3 id="jake-title">Jake Morley</h3>
+      <p style="color:#00aaff; font-size:0.85rem; margin-bottom:15px;">STRENGTH &amp; CONDITIONING</p>
+      <p>Jake holds a Level 3 Personal Training certificate and has coached over 200 clients. His programmes are built around compound movements, progressive overload, and long-term consistency. Available Mon–Fri, 6am–8pm.</p>
+      <br>
+      <a href="contact.html" class="btn" onclick="closeModal('modal-jake')">Book Jake</a>
+    </div>
+  </div>
+
+  <!-- Sara Modal -->
+  <div id="modal-sara" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="sara-title">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-sara')" aria-label="Close Sara's profile">&times;</button>
+      <div style="font-size:3rem; margin-bottom:12px;">🏃</div>
+      <h3 id="sara-title">Sara Chen</h3>
+      <p style="color:#00aaff; font-size:0.85rem; margin-bottom:15px;">CARDIO &amp; WEIGHT LOSS</p>
+      <p>Sara is dual-qualified in personal training and nutrition coaching. She offers 6-week and 12-week transformation programmes combining exercise and diet planning. Available Tue–Sat, 7am–6pm.</p>
+      <br>
+      <a href="contact.html" class="btn" onclick="closeModal('modal-sara')">Book Sara</a>
+    </div>
+  </div>
+
+  <!-- Marcus Modal -->
+  <div id="modal-marcus" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="marcus-title">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-marcus')" aria-label="Close Marcus's profile">&times;</button>
+      <div style="font-size:3rem; margin-bottom:12px;">🥊</div>
+      <h3 id="marcus-title">Marcus Bell</h3>
+      <p style="color:#00aaff; font-size:0.85rem; margin-bottom:15px;">BOXING &amp; HIIT</p>
+      <p>Marcus ran boxing academies for 5 years before joining Muscle Zone. His HIIT classes run every Tuesday and Thursday at 6pm and are open to all members. One-to-one sessions available on request.</p>
+      <br>
+      <a href="contact.html" class="btn" onclick="closeModal('modal-marcus')">Book Marcus</a>
+    </div>
+  </div>
+
+  <!-- Amy Modal -->
+  <div id="modal-amy" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="amy-title">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-amy')" aria-label="Close Amy's profile">&times;</button>
+      <div style="font-size:3rem; margin-bottom:12px;">🧘</div>
+      <h3 id="amy-title">Amy Patel</h3>
+      <p style="color:#00aaff; font-size:0.85rem; margin-bottom:15px;">YOGA &amp; MOBILITY</p>
+      <p>Amy has been practising yoga for over 10 years and teaching for 6. Her sessions focus on active recovery, joint health, and stress management. Group yoga every Wednesday at 7pm. All levels welcome.</p>
+      <br>
+      <a href="contact.html" class="btn" onclick="closeModal('modal-amy')">Book Amy</a>
+    </div>
+  </div>
+
+  <!-- Dan Modal -->
+  <div id="modal-dan" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="dan-title">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-dan')" aria-label="Close Dan's profile">&times;</button>
+      <div style="font-size:3rem; margin-bottom:12px;">🏋️</div>
+      <h3 id="dan-title">Dan Ross</h3>
+      <p style="color:#00aaff; font-size:0.85rem; margin-bottom:15px;">BODYBUILDING &amp; NUTRITION</p>
+      <p>Dan has competed in regional bodybuilding competitions since 2018 and brings that competitive-level knowledge to his clients. He produces fully custom 12-week plans covering both training and nutrition.</p>
+      <br>
+      <a href="contact.html" class="btn" onclick="closeModal('modal-dan')">Book Dan</a>
+    </div>
+  </div>
+
+  <!-- Leah Modal -->
+  <div id="modal-leah" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="leah-title">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-leah')" aria-label="Close Leah's profile">&times;</button>
+      <div style="font-size:3rem; margin-bottom:12px;">⚡</div>
+      <h3 id="leah-title">Leah Ford</h3>
+      <p style="color:#00aaff; font-size:0.85rem; margin-bottom:15px;">FUNCTIONAL FITNESS</p>
+      <p>Leah holds a Level 4 qualification in physical rehabilitation and works closely with physiotherapists. She is the trainer to see if you are recovering from an injury or want to build a more resilient body.</p>
+      <br>
+      <a href="contact.html" class="btn" onclick="closeModal('modal-leah')">Book Leah</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
